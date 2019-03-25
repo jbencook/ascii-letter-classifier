@@ -8,6 +8,7 @@ setup(
     install_requires=[
         'dataclasses',
         'fire',
+        'imageio',
         'mnist-pipeline>=0.2.0',
         'pyyaml',
     ],

@@ -39,3 +39,11 @@ class AsciiLetterFiles:
             with tarfile.open(self.dataset_tarball) as tar:
                 tar.extractall(self._directory)
         return self.dataset_folder
+
+    @property
+    def train_dataset(self) -> str:
+        return str(self._directory/self._train_dataset_filename)
+
+    @property
+    def test_dataset(self) -> str:
+        return str(self._directory/self._test_dataset_filename)
