@@ -1,8 +1,8 @@
 from pathlib import Path
+from typing import Tuple
 
 from dataclasses import dataclass
-
-from mnist.config import MnistConfig
+from mnist import MnistConfig
 
 
 @dataclass
@@ -12,3 +12,9 @@ class AsciiLetterConfig(MnistConfig):
     seed: int = 12345
     n_train_samples: int = 2080
     n_test_samples: int = 520
+    image_height: int = 32
+    image_width: int = 32
+    batch_size: int = 128
+    n_epochs: int = 1
+    learning_rate: float = 0.005
+    pretrained_features: bool = True
