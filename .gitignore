@@ -2,3 +2,4 @@
 ascii_letter_classifier.egg-info
 .test
 __pycache__
+dist
