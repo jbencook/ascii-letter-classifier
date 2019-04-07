@@ -18,7 +18,6 @@ setup(
         'fire',
         'imageio',
         'mnist-pipeline==0.2.1',
-        'pyyaml',
     ],
     extras_require={
         'cpu': ['tensorflow'],

@@ -18,3 +18,7 @@ class AsciiLetterConfig(MnistConfig):
     n_epochs: int = 1
     learning_rate: float = 0.005
     pretrained_features: bool = True
+
+    def update(self, **kwargs) -> 'AsciiLetterConfig':
+        params = {**self.__dict__, **kwargs}
+        return AsciiLetterConfig(**params)
