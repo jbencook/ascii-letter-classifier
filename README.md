@@ -1,5 +1,5 @@
 # ASCII Letter Classifier Pipeline
-A toy ML pipeline that creates an ASCII letter classifier.
+A toy transfer learning pipeline that creates an ASCII letter classifier.
 
 ## Installation
 
